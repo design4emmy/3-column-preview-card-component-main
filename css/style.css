@@ -10,11 +10,15 @@ body{
     font-size: 1rem;
     line-height: 1.6;
     padding: 2em;
-    min-height: 100vh;
-    
-    
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
 }
+
+
+
 h2,
 p,
 a{
@@ -23,6 +27,7 @@ a{
 
 
 h2{
+    margin-top: 1em;
     font-family: 'Barlow Condensed' sans-serif;
     font-weight: 700;
 }
@@ -36,6 +41,7 @@ a{
     text-decoration: none;
     padding: .5em 1.25em;
     border-radius: 20em;
+    margin-top: 3em;
 }
 
 
@@ -45,13 +51,21 @@ a{
 
 .card{
     width: 80%;
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 900px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
+
+.sedan {
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+}
+
+.luxury{
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
 
 .sedan,
 .suv,
@@ -98,29 +112,39 @@ a{
 
 
 @media (min-width: 550px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
 
-    /* body{
-        border: 3px solid #00403F;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    } */
+    body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    }
+
     .card{
         display: flex;
         flex-direction: row;  
     }
 
-    /* .sedan
-    .suv,
-    .luxury{
-        height: 100vh;
-    } */
-
     a{
         margin-top: 5em;
         font-weight: 400;
     }
+
+    .sedan {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 1em;
+    }
+    
+    .luxury{
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 1em;    
+    }
+    
 }
 
 
