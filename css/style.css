@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    color: #fff;
+    background-color: #F2F2F2;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 2em;
+    min-height: 100vh;
+    
+    
+
+}
+h2,
+p,
+a{
+    margin:0;
+}
+
+
+h2{
+    font-family: 'Barlow Condensed' sans-serif;
+    font-weight: 700;
+}
+
+
+a{
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    background-color: #fff;
+    text-decoration: none;
+    padding: .5em 1.25em;
+    border-radius: 20em;
+}
+
+
+
+
+
+
+.card{
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sedan,
+.suv,
+.luxury{
+    padding: 3em 2em;
+}
+
+.sedan{
+    background-color:#E28525;
+}
+
+.sedan a{
+    color: #E28525;
+}
+
+.suv a{
+    color: #016972;
+}
+
+.luxury a{
+    color: #00403F;
+}
+
+.sedan a:hover,
+.sedan a:focus,
+.suv a:hover,
+.suv a:focus,
+.luxury a:hover,
+.luxury a:focus{
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+
+
+.suv{
+    background-color: #016972;
+}
+
+.luxury{
+    background-color: #00403F;
+}
+
+
+@media (min-width: 550px){
+
+    /* body{
+        border: 3px solid #00403F;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } */
+    .card{
+        display: flex;
+        flex-direction: row;  
+    }
+
+    /* .sedan
+    .suv,
+    .luxury{
+        height: 100vh;
+    } */
+
+    a{
+        margin-top: 5em;
+        font-weight: 400;
+    }
+}
+
+
+
+
